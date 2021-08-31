@@ -402,6 +402,10 @@ main {
         width: 100%;
         height: 1100px;
     }
+    main,
+    footer {
+        width: 100%;
+    }
     /* Header */
     header nav {
         flex-direction: column;
@@ -520,5 +524,105 @@ main {
         width: 300px;
         height: 80px;
         margin-bottom: 0px;
+    }
+}
+
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    header {
+        width: 106%;
+        height: 570px;
+    }
+    main,
+    footer {
+        width: 100%;
+    }
+    /* Header */
+    nav {
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* Header Menu */
+    nav .heading-menu {
+        display: inline-flex;
+        justify-content: center;
+    }
+    /* Header Menu Button */
+    nav .menu-button {
+        margin: 0 auto;
+    }
+    /* Heading Title & Image */
+    .heading-content {
+        flex-direction: row;
+    }
+    .heading-content .heading-title h2 {
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: 46.12px;
+        margin-right: 66px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
+    .heading-button {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    .heading-image img {
+        width: 329px;
+        height: 259.17px;
+        margin: 30px 80px 61.83px 0px;
+    }
+    .heading-image img:hover {
+        width: 300px;
+        height: 225px;
+    }
+    /* Best Football Player */
+    .top-footballers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+    }
+    /* WorldCup Football Highlights */
+    .football-blogs {
+        display: flex;
+        flex-direction: row;
+    }
+    .football-blogs>.blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .football-blogs>.blogs>.blog-title {
+        width: 329px;
+        height: 299px;
+        margin: 165px 16px 0px;
+    }
+    .football-blogs>.blogs>.blog-title>h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .football-blogs>.blogs>.blog-title>p {
+        font-size: 16px;
+        line-height: 28px;
+        width: 329px;
+        height: 143px;
+    }
+    .football-blogs>.blogs>.blog-image>img {
+        width: 328px;
+        height: 248px;
+        margin: 165px 15px 0px 0px;
+    }
+    /* WorldCup Football Winners */
+    .football-winners>.winners>.winner {
+        width: 495px;
+        height: 130px;
+    }
+    /* WorldCup Football Partnership */
+    .fifa-partnership {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 135px;
     }
 }
